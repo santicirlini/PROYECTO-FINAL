@@ -1,0 +1,34 @@
+/* acerca de mi */
+.containerMaker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    img{
+        max-width: 50%;
+        border: rgb(146, 146, 146) 2px solid;
+        border-radius: 30px;
+    }
+}
+
+.contParrafo{
+    display: grid;
+    grid-template: auto;
+    grid-template-columns: (3, auto);
+    grid-template-rows: (1, auto);
+    grid-template-areas: 
+         "nada" "parrafo" "nada"; 
+    gap: 10px;
+    .parrafo{
+        grid-area: parrafo;
+        color:white;
+        background-color: #441833;
+        text-align: center;
+        font-size: large;
+        height: 200px;
+        width: 580px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+  }

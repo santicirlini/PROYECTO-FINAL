@@ -1,0 +1,28 @@
+/* galeria */
+.imgTexto{
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    .img{
+        margin: 28px;
+        border: 2px gray;
+        border-radius: 20px;
+        box-shadow: 0 0 10px black;
+    }
+}
+
+.fotoMuñeco{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* galeria */
+.imgTexto {
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: black; }
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative; }
+  .galeria .img {
+    margin: 28px;
+    border: 2px gray;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black; }
+
+.fotoMuñeco {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black; }
+
+/* body */
+body {
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif; }
+
+/* formulario */
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px; }
+
+.inputForm {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px; }
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px; }
+
+label {
+  display: block;
+  float: center; }
+
+.buttonForm {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer; }
+
+.buttonForm p {
+  color: #fff; }
+
+.obligatorio {
+  color: #ab4493; }
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e; }
+
+.letra1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #ab4493; }
+
+.letra3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e; }
+
+.pForm {
+  font-size: 14px;
+  color: #0e0e0e; }
+
+::-webkit-input-placeholder {
+  color: #a8a8a8; }
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8; }
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848; }
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848; }
+
+/* footer */
+footer {
+  justify-content: center;
+  height: 50px; }
+  footer .sociales {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+    footer .sociales a {
+      text-decoration: none;
+      font-size: 28px;
+      text-align: center;
+      color: black; }
+
+/* acerca de mi */
+.containerMaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto; }
+  .containerMaker img {
+    max-width: 50%;
+    border: #929292 2px solid;
+    border-radius: 30px; }
+
+.contParrafo {
+  display: grid;
+  grid-template: auto;
+  grid-template-columns: 3, auto;
+  grid-template-rows: 1, auto;
+  grid-template-areas: "nada" "parrafo" "nada";
+  gap: 10px; }
+  .contParrafo .parrafo {
+    grid-area: parrafo;
+    color: white;
+    background-color: #441833;
+    text-align: center;
+    font-size: large;
+    height: 200px;
+    width: 580px;
+    border-radius: 10px;
+    justify-content: center; }
+
+/* contenedor de precios */
+.contPrecio {
+  display: grid;
+  grid-template: auto;
+  grid-template-columns: 3, auto;
+  grid-template-rows: 1, auto;
+  grid-template-areas: "nada" "precio" "nada";
+  gap: 10px; }
+  .contPrecio .precio {
+    grid-area: precio;
+    color: #0e0e0e;
+    background-color: #36b80e;
+    text-align: center;
+    font-size: large;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    justify-content: center; }
